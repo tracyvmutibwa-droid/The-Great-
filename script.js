@@ -1,0 +1,25 @@
+function addTask() {
+  const input = document.getElementById("taskInput");
+  const taskText = input.value;
+
+  if (taskText === "") return;
+
+  const li = document.createElement("li");
+
+  li.innerHTML = `
+    <span onclick="toggleTask(this)">${taskText}</span>
+    <button onclick="deleteTask(this)">❌</button>
+  `;
+
+  document.getElementById("taskList").appendChild(li);
+
+  input.value = "";
+}
+
+function toggleTask(element) {
+  element.classList.toggle("completed");
+}
+
+function deleteTask(button) {
+  button.parentElement.remove();
+}
