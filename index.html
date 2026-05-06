@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Daily Task Manager 🗓️</h1>
+
+    <!-- Task Input -->
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter a task">
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+
+    <!-- Prayer Section -->
+    <div class="prayer-section">
+      <h2>Prayer Reminders 🕌</h2>
+      <ul>
+        <li>Fajr - 5:30 AM</li>
+        <li>Dhuhr - 1:00 PM</li>
+        <li>Asr - 4:30 PM</li>
+        <li>Maghrib - 7:00 PM</li>
+        <li>Isha - 8:30 PM</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
