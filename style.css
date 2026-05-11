@@ -74,3 +74,13 @@ nav ul li a{
   color:white;
   text-decoration:none;
 }
+.hero{
+  text-align:center;
+  padding:50px;
+  background:white;
+}
+
+.hero h1{
+  font-size:35px;
+  margin-bottom:10px;
+}
