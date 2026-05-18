@@ -48,4 +48,37 @@ function loadTasks(){
 
     document.getElementById("taskList").appendChild(li);
   });
+function checkPrayerTimes(){
+
+  const now = new Date();
+
+  const currentHour = now.getHours();
+  const currentMinute = now.getMinutes();
+
+  // Fajr Reminder
+  if(currentHour === 5 && currentMinute === 30){
+    alert("🕌 Time for Fajr Prayer");
+  }
+
+  // Dhuhr Reminder
+  if(currentHour === 13 && currentMinute === 0){
+    alert("🕌 Time for Dhuhr Prayer");
+  }
+
+  // Asr Reminder
+  if(currentHour === 16 && currentMinute === 30){
+    alert("🕌 Time for Asr Prayer");
+  }
+
+  // Maghrib Reminder
+  if(currentHour === 19 && currentMinute === 0){
+    alert("🕌 Time for Maghrib Prayer");
+  }
+
+  // Isha Reminder
+  if(currentHour === 20 && currentMinute === 30){
+    alert("🕌 Time for Isha Prayer");
+  }
 }
+
+setInterval(checkPrayerTimes, 60000);
