@@ -82,11 +82,37 @@ nav ul li{
 nav ul li a{
   color:white;
   text-decoration:none;
-}
 .hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   text-align:center;
-  padding:50px;
-  background:white;
+  padding:40px;
+  background:rgba(255,255,255,0.85);
+}
+
+.hero h1{
+  font-size:45px;
+  margin-bottom:15px;
+  color:darkgreen;
+}
+
+.hero h3{
+  margin-top:20px;
+  color:green;
+}
+
+.hero h5{
+  margin-bottom:15px;
+  font-size:18px;
+}
+
+.hero p{
+  max-width:700px;
+  line-height:1.6;
+
 }
   footer{
   background:green;
